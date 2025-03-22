@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Ranjana Ji</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #ffe6e6;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .container {
+            display: none;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 36px;
+        }
+        p {
+            font-size: 20px;
+            color: #555;
+        }
+        .image {
+            margin-top: 20px;
+        }
+        .balloons {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: url('https://media.giphy.com/media/3o7abldj0b3rxrZFsI/giphy.gif') center/cover no-repeat;
+            display: block;
+            z-index: 10;
+        }
+        .click-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="balloons" onclick="showCard()">
+        <div class="click-text">🎉 Click to Reveal Birthday Surprise! 🎂</div>
+    </div>
+
+    <div class="container" id="birthdayCard">
+        <h1>🎉 Happy Birthday Meri Bahan Ki Pyari Nanad Ranjana Ji 🎂</h1>
+        <p>Wishing you a day filled with love, joy, and happiness!</p>
+        <div class="image">
+            <img src="YOUR_IMAGE_LINK_HERE" alt="Birthday Wishes" width="400px">
+        </div>
+    </div>
+
+    <script>
+        function showCard() {
+            document.querySelector('.balloons').style.display = 'none';
+            document.getElementById('birthdayCard').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
